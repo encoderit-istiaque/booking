@@ -1,0 +1,130 @@
+.logo{
+    width: 342px;
+}
+@media (max-width: 575.98px) { 
+    .logo{
+        width: 224px;
+    }
+}
+.booking-header-bg{
+    background: #F5F5F5;
+}
+.default-colorblue-text{
+    color: #003F72;
+}
+
+.add-service{
+    -webkit-border-radius: 8;
+    -moz-border-radius: 8;
+    border-radius: 8px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 700;
+    background: #003F72;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+}
+  
+.add-service:hover {
+    text-decoration: none;
+    color: #ffffff;
+  }
+/************
+tab option
+************/
+  
+  body {
+    background-color: #f1f1f1;
+  }
+  
+  h1 {
+    text-align: center;  
+  }
+  
+  input {
+    padding: 10px;
+    width: 100%;
+    font-size: 17px;
+    font-family: Raleway;
+    border: 1px solid #aaaaaa;
+  }
+  
+  /* Mark input boxes that gets an error on validation: */
+  input.invalid {
+    background-color: #ffdddd;
+  }
+  
+  /* Hide all steps by default: */
+  .tab {
+    display: none;
+  }
+  
+  button {
+    background-color: #04AA6D;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 17px;
+    font-family: Raleway;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  #prevBtn {
+    background-color: #bbbbbb;
+  }
+  
+  /* Make sqaure that indicate the steps of the form: */
+  .step {
+    height: 16px;
+    width: 19.3%;;
+    margin: 0 2px;
+    background-color: #BEC3C7;
+    border: none;
+    display: inline-block;
+}
+  
+  .step.active {
+    opacity: 1;
+  }
+  
+  /* Mark the steps that are finished and valid: */
+  .step.finish {
+    background-color: #003F72;
+  }
+
+  #ui-datepicker-div {
+    background: #003F72 !important; 
+}
+.ui-datepicker .ui-datepicker-header{
+    background: #003F72 !important;
+}
+span {
+    color: #fff;
+}
+.ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next {
+    background: #fff;
+}
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+    background: #003F72;
+    color: #fff;
+    border: none;
+}
+
+.ui-datepicker-prev span {
+    background-image: url(../image/left-arrow.png) !important;
+        background-position: 0px 0px !important;
+}
+
+.ui-datepicker-next span {
+    background-image: url(../image/right-arrow.png) !important;
+        background-position: 0px 0px !important;
+}
+#datepicker{
+    padding: 5px;
+    width: 90%;
+}
