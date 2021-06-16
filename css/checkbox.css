@@ -14,7 +14,7 @@
   
   /* Hide the browser's default checkbox */
   .container .checkbox {
-    position: absolute;
+    /* position: absolute; */
     opacity: 0;
     cursor: pointer;
     height: 0;

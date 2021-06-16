@@ -1310,3 +1310,11 @@ a.ui-button:active,
 	-webkit-box-shadow: 0px 0px 5px #666666;
 	box-shadow: 0px 0px 5px #666666;
 }
+.ui-datepicker-prev span {
+    background-image: url(../image/left-arrow.png) !important;
+        background-position: 0px 0px !important;
+}
+.ui-datepicker-next span {
+    background-image: url(../image/right-arrow.png) !important;
+        background-position: 0px 0px !important;
+}

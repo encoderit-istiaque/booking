@@ -11,7 +11,6 @@
   <link rel="stylesheet" href="css/jquery-ui.min.css">
   <link rel="stylesheet" href="css/checkbox.css">
   <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="sass/style.css">
   <title>Booking</title>
 </head>
 
@@ -56,30 +55,27 @@
   <section>
     <div class="container">
       <div class="row">
-        <div class="col-lg-12 col-12">
-          <div style="text-align:center;margin-top:40px;">
-            <span class="step"></span>
-            <span class="step"></span>
-            <span class="step"></span>
-            <span class="step"></span>
-            <span class="step"></span>
+        <div class="col-lg-12 col-12 d-md-block d-none">
+          <div style="text-align:center;margin-top:20px;">
+            <span class="step step-1"></span>
+            <span class="step step-2"></span>
+            <span class="step step-3"></span>
+            <span class="step step-4"></span>
+            <span class="step step-5"></span>
           </div>
         </div>
-
-
-        <div class="col-lg-12 col-12">
-          <p class="fw-bold pt-3">Please select service:</p>
-        </div>
-
+      </div>
+      <div class="row">
         <!-- One "tab" for each step in the form: -->
-
         <div class="tab">
           <div class="row">
-            <div class="col-lg-4">
+            <div class="col-lg-12 col-12">
+              <h3 class="fw-bold pt-3">Please select service:</h3>
+            </div>
+            <div class="col-lg-4 col-12">
               <p class="fw-bold fs-5  default-colorblue-text">Service</p>
-
               <select class="form-select" aria-label="Default select example">
-                <option selected>Open this select menu</option>
+                <option selected>Select Service</option>
                 <option value="1">One</option>
                 <option value="2">Two</option>
                 <option value="3">Three</option>
@@ -87,133 +83,299 @@
 
               <p class="fw-bold fs-5 pt-3 default-colorblue-text">Please select a service</p>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 col-12">
               <p class="fw-bold fs-5 default-colorblue-text">Employee</p>
 
               <select class="form-select" aria-label="Default select example">
-                <option selected>Open this select menu</option>
+                <option selected>Any</option>
                 <option value="1">One</option>
                 <option value="2">Two</option>
                 <option value="3">Three</option>
               </select>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 col-12">
               <p class="fw-bold fs-5 default-colorblue-text">Duration</p>
 
               <select class="form-select" aria-label="Default select example">
-                <option selected>Open this select menu</option>
+                <option selected>-</option>
                 <option value="1">One</option>
                 <option value="2">Two</option>
                 <option value="3">Three</option>
               </select>
             </div>
 
-            <div class="col-lg-12">
+            <div class="col-lg-12 col-12">
               <a href="#" class="add-service">ADD SERVICE</a>
             </div>
 
-            <div class="col-lg-3 pt-3">
+            <div class="col-lg-3 col-md-12 col-sm-12 pt-3 col-12">
               <p class="fw-bold fs-5 p">I'm available on or after</p>
-              <input type="text" id="datepicker">
+              <input type="text" class="datepicker" value="2">
             </div>
 
-            <div class="col-lg-5 pt-3 ">
-              <div class="d-inline-block">
-                <span class="text-dark">MON</span>
-                <label class="container">
-                  <input type="checkbox" checked="checked" class="checkbox">
-                  <span class="checkmark"></span>
-                </label>
+
+            <div class="col-lg-5 pt-3 col-12 col-sm-12 sol-md-12">
+              <div class="d-inline-block schedule">
+                <div class="schedule-flex">
+                  <span class="text-dark">MON</span>
+                  <label class="container">
+                    <input type="checkbox" checked="checked" class="checkbox">
+                    <span class="checkmark mt-3 ms-2"></span>
+                  </label>
+                </div>
               </div>
-              <div class="d-inline-block">
-                <span class="text-dark">TUE</span>
-                <label class="container">
-                  <input type="checkbox" checked="checked" class="checkbox">
-                  <span class="checkmark"></span>
-                </label>
+              <div class="d-inline-block schedule">
+                <div class="schedule-flex">
+                  <span class="text-dark">TUE</span>
+                  <label class="container">
+                    <input type="checkbox" checked="checked" class="checkbox">
+                    <span class="checkmark mt-3 ms-2"></span>
+                  </label>
+                </div>
               </div>
-              <div class="d-inline-block">
-                <span class="text-dark">WED</span>
-                <label class="container">
-                  <input type="checkbox" checked="checked" class="checkbox">
-                  <span class="checkmark"></span>
-                </label>
+              <div class="d-inline-block schedule">
+                <div class="schedule-flex">
+                  <span class="text-dark">WED</span>
+                  <label class="container">
+                    <input type="checkbox" checked="checked" class="checkbox">
+                    <span class="checkmark mt-3 ms-2"></span>
+                  </label>
+                </div>
               </div>
-              <div class="d-inline-block">
-                <span class="text-dark">THUR</span>
-                <label class="container">
-                  <input type="checkbox" checked="checked" class="checkbox">
-                  <span class="checkmark"></span>
-                </label>
+              <div class="d-inline-block schedule">
+                <div class="schedule-flex">
+                  <span class="text-dark">THURS</span>
+                  <label class="container">
+                    <input type="checkbox" checked="checked" class="checkbox">
+                    <span class="checkmark mt-3 ms-2"></span>
+                  </label>
+                </div>
               </div>
-              <div class="d-inline-block">
-                <span class="text-dark">FRI</span>
-                <label class="container">
-                  <input type="checkbox" checked="checked" class="checkbox">
-                  <span class="checkmark"></span>
-                </label>
+              <div class="d-inline-block schedule">
+                <div class="schedule-flex">
+                  <span class="text-dark">FRI</span>
+                  <label class="container">
+                    <input type="checkbox" checked="checked" class="checkbox">
+                    <span class="checkmark mt-3 ms-2"></span>
+                  </label>
+                </div>
               </div>
-              <div class="d-inline-block">
-                <span class="text-dark">SAT</span>
-                <label class="container">
-                  <input type="checkbox" checked="checked" class="checkbox">
-                  <span class="checkmark"></span>
-                </label>
+              <div class="d-inline-block schedule">
+                <div class="schedule-flex">
+                  <span class="text-dark">SAT</span>
+                  <label class="container">
+                    <input type="checkbox" checked="checked" class="checkbox">
+                    <span class="checkmark mt-3 ms-2"></span>
+                  </label>
+                </div>
+              </div>
+              <div class="d-inline-block schedule">
+                <div class="schedule-flex">
+                  <span class="text-dark">SUN</span>
+                  <label class="container">
+                    <input type="checkbox" checked="checked" class="checkbox">
+                    <span class="checkmark mt-3 ms-2"></span>
+                  </label>
+                </div>
               </div>
             </div>
 
-            <div class="col-lg-2 pt-2">
+            <div class="col-lg-2 col-12 pt-2">
               <p class="fw-bold fs-5">Start from</p>
               <select class="form-select" aria-label="Default select example">
-                <option selected>Open this select menu</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
+                <option selected>12.00</option>
+                <option value="1">12.00</option>
+                <option value="2">12.00</option>
+                <option value="3">12.00</option>
               </select>
             </div>
 
-            <div class="col-lg-2 pt-2">
+            <div class="col-lg-2 col-12 pt-2">
               <p class="fw-bold fs-5">Finish by</p>
               <select class="form-select" aria-label="Default select example">
-                <option selected>Open this select menu</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
+                <option selected>11.00</option>
+                <option value="1">1.00</option>
+                <option value="2">2.00</option>
+                <option value="3">3.00</option>
               </select>
+            </div>
+
+            <div class="col-lg-12 col-12">
+              <hr class="mt-5">
+            </div>
+
+          </div>
+        </div>
+        <div class="tab">
+          <div class="row">
+            <div class="col-lg-12 col-12">
+              <p style="width: 50%;" class="fs-5 py-3">Below you can find a list of available time slots for Artist Development by Dave Ferguson.
+                Click on a time slot to proceed with booking.</p>
+              <div class="py-3">
+                <select class="form-select location" aria-label="Default select example">
+                  <option selected>London</option>
+                  <option value="1">London</option>
+                  <option value="2">USA</option>
+                  <option value="3">Bangladesh</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-4 col-12">
+
+              <div class="DateBox datepicker pt-3 d-inline-block"></div>
+              <!-- <input type="hidden" id="dateHidden" name="dateHidden" /> -->
+            </div>
+            <div class="col-md-4 col-12">
+              <div class="col-lg-5  pt-3">
+                <div class="border default-colorblue-bg">
+                  <p class="fs-5 fw-bold text-white text-center px-3 mb-0">Thu,Jun 21</p>
+                </div>
+                <div class="border default-colorblue-bg">
+                  <p class="fs-5 fw-bold text-white text-center px-3 mb-0"><input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">11.00 am</p>
+                </div>
+                <div class="border default-colorblue-bg">
+                  <p class="fs-5 fw-bold text-white text-center px-3 mb-0"><input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">12.00 am</p>
+                </div>
+                <div class="border default-colorblue-bg">
+                  <p class="fs-5 fw-bold text-white text-center px-3 mb-0"><input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">13.00 am</p>
+                </div>
+                <div class="border default-colorblue-bg">
+                  <p class="fs-5 fw-bold text-white text-center px-3 mb-0"><input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">14.00 am</p>
+                </div>
+                <div class="border default-colorblue-bg">
+                  <p class="fs-5 fw-bold text-white text-center px-3 mb-0"><input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">15.00 am</p>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+
+        <div class="tab">
+          <div class="row">
+            <div class="col-lg-12 c0l-12">
+              <p style="width: 50%;" class="fs-5">Below you can find a list of available time slots for Artist Development by Dave Ferguson.
+                Click on a time slot to proceed with booking.</p>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-5 col-6">
+              <label for="exampleFormControlInput1" class="form-label default-colorblue-text fw-bold">First name</label>
+              <input type="text" class="form-control" id="exampleFormControlInput1">
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-sm-5 col-6">
+              <label for="exampleFormControlInput1" class="form-label default-colorblue-text fw-bold">Last name</label>
+              <input type="text" class="form-control" id="exampleFormControlInput1">
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+              <label for="exampleFormControlInput1" class="form-label default-colorblue-text fw-bold">Phone</label>
+              <input type="text" class="form-control" id="exampleFormControlInput1">
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+              <label for="exampleFormControlInput1" class="form-label default-colorblue-text fw-bold">Email</label>
+              <input type="text" class="form-control" id="exampleFormControlInput1">
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+              <label for="exampleFormControlInput1" class="form-label default-colorblue-text fw-bold">Confirm email</label>
+              <input type="text" class="form-control" id="exampleFormControlInput1">
+            </div>
+
+            <div class="col-lg-12 col-12">
+              <label for="exampleFormControlTextarea1" class="form-label default-colorblue-text fw-bold ">Example textarea</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <hr class="mt-3">
+          </div>
+        </div>
+
+        <div class="tab">
+          <div class="row">
+            <div class="col-lg-12 col-12">
+              <h3>Confirm Payment</h3>
+            </div>
+            <div class="col-lg-6">
+              <h5>Payment Summary</h5>
+              <p>Please review the following details</p>
+
+              <table class="table table-striped">
+
+                <tr class="table-background">
+                  <th class="default-colorblue-text fw-bold fs-5">Description</th>
+                  <th class="default-colorblue-text fw-bold fs-5">Item Price</th>
+                </tr>
+
+                <tr class="table-background">
+                  <td class="default-colorblue-text fs-5">Base Price</td>
+                  <td class="default-colorblue-text fs-5">10$</td>
+                </tr>
+
+                <tr class="table-background">
+                  <td class="default-colorblue-text fs-5">Which one you want/</td>
+                  <td class="default-colorblue-text fs-5">10$</td>
+                </tr>
+
+                <tr class="table-background">
+                  <td class="default-colorblue-text fw-bold fs-5">Total</td>
+                  <td class="default-colorblue-text fs-5">50$</td>
+                </tr>
+
+              </table>
+
+            </div>
+            <div class="col-lg-6">
+              <div class="row">
+                <div class="col-lg-8">
+                  <label for="exampleFormControlInput1" class="form-label default-colorblue-text fw-bold fs-5">Name on Card</label>
+                  <input type="text" class="form-control" id="exampleFormControlInput1">
+
+                </div>
+                <div class="col-lg-4">
+                  <label for="exampleFormControlInput1" class="form-label default-colorblue-text fw-bold fs-5">Post Card</label>
+                  <input type="text" class="form-control" id="exampleFormControlInput1">
+                </div>
+
+                <div class="col-lg-12">
+                  <label for="exampleFormControlInput1" class="form-label default-colorblue-text fw-bold fs-5">Card Numbers</label>
+                  <input type="text" class="form-control" id="exampleFormControlInput1">
+                </div>
+
+                <div class="col-lg-4">
+                  <label for="exampleFormControlInput1" class="form-label default-colorblue-text fw-bold fs-5">Expiration</label>
+                  <input type="text" class="form-control" id="exampleFormControlInput1">
+                </div>
+                <div class="col-lg-4">
+                  <label for="exampleFormControlInput1" class="form-label default-colorblue-text fw-bold fs-5">yy</label>
+                  <input type="text" class="form-control" id="exampleFormControlInput1">
+                </div>
+                <div class="col-lg-4">
+                  <label for="exampleFormControlInput1" class="form-label default-colorblue-text fw-bold fs-5">CW</label>
+                  <input type="text" class="form-control" id="exampleFormControlInput1">
+                </div>
+
+              </div>
+
             </div>
 
           </div>
         </div>
 
-        <div class="tab">Contact Info:
-          <p><input placeholder="E-mail..." oninput="this.className = ''" name="email"></p>
-          <p><input placeholder="Phone..." oninput="this.className = ''" name="phone"></p>
-        </div>
+        <div class="tab">
+          <div class="row">
+            <div class="col-lg-12 col-12">
+              <p class="fs-5">Thank you! Your booking is complete. An email with details of your booking has been sent to you</p>
 
-        <div class="tab">Birthday:
-          <p><input placeholder="dd" oninput="this.className = ''" name="dd"></p>
-          <p><input placeholder="mm" oninput="this.className = ''" name="nn"></p>
-          <p><input placeholder="yyyy" oninput="this.className = ''" name="yyyy"></p>
-        </div>
+            </div>
 
-        <div class="tab">Login Info:
-          <p><input placeholder="Username..." oninput="this.className = ''" name="uname"></p>
-          <p><input placeholder="Password..." oninput="this.className = ''" name="pword" type="password"></p>
-        </div>
-
-        <div class="tab">Login Info:
-          <p><input placeholder="Username..." oninput="this.className = ''" name="uname"></p>
-          <p><input placeholder="Password..." oninput="this.className = ''" name="pword" type="password"></p>
-        </div>
-
-        <div style="overflow:auto;">
-          <div style="float:right;">
-            <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
-            <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
           </div>
         </div>
       </div>
-    </div>
+      <div class="row justify-content-end pt-4">
+        <button type="button" class="btn btn-primary btn-width me-4" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+        <button type="button" class="btn btn-primary btn-width" id="nextBtn" onclick="nextPrev(1)">Next</button>
+      </div>
     </div>
   </section>
 

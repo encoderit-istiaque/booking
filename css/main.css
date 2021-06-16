@@ -9,8 +9,22 @@
 .booking-header-bg{
     background: #F5F5F5;
 }
+.table-background{
+  background: #f1f1f1;
+}
 .default-colorblue-text{
     color: #003F72;
+}
+
+.default-colorblue-bg{
+  background: #003F72;
+}
+#nextBtn{
+  background: #003F72;
+  color: #fff;
+}
+.btn-width{
+  width: 15%;
 }
 
 .add-service{
@@ -61,28 +75,27 @@ tab option
   }
   
   button {
-    background-color: #04AA6D;
+    background-color: #003F72;
     color: #ffffff;
     border: none;
     padding: 10px 20px;
     font-size: 17px;
-    font-family: Raleway;
     cursor: pointer;
   }
+ 
   
-  button:hover {
-    opacity: 0.8;
-  }
   
   #prevBtn {
-    background-color: #bbbbbb;
+    background-color: #003F72;
+    color: #fff;
+    font-weight: 700;
   }
   
   /* Make sqaure that indicate the steps of the form: */
   .step {
     height: 16px;
-    width: 19.3%;;
-    margin: 0 2px;
+    width: 19.6%;
+    /* margin: 0 2px; */
     background-color: #BEC3C7;
     border: none;
     display: inline-block;
@@ -124,7 +137,32 @@ span {
     background-image: url(../image/right-arrow.png) !important;
         background-position: 0px 0px !important;
 }
-#datepicker{
+.datepicker{
     padding: 5px;
     width: 90%;
 }
+@media (min-width: 746px) { 
+  .location{
+    width: 25%;
+  }
+ }
+
+ tr {
+  background: #003F72;
+}
+/* .select-time{
+  background: #003F72;
+} */
+@media (max-width: 763px) { 
+  .step {
+    width: 16.3%;
+}
+ }
+ /* @media (max-width: 1399px) {
+      .schedule{
+        display: block !important;
+      }
+      .schedule-flex{
+        display: flex;
+      }
+   } */
